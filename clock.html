@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Planetary Clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="clock-container">
+        <div class="center-info">
+            <div id="timeText">00:00:00</div>
+            <div id="dateText">Wed Dec 17</div>
+        </div>
+        <div class="orbit hour-orbit">
+            <div class="planet hour-planet"></div>
+        </div>
+        <div class="orbit minute-orbit">
+            <div class="planet minute-planet"></div>
+        </div>
+        <div class="orbit second-orbit">
+            <div class="planet second-planet">
+                <div class="moon-orbit-line"></div>
+                <div class="moon-rotator">
+                    <div class="moon"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
