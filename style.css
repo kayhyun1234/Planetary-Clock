@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    color: #555555;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.clock-container {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-info {
+    text-align: center;
+    z-index: 10;
+}
+#timeText {
+    font-size: 2rem;
+    font-weight: bold;
+}
+#dateText {
+    font-size: 1rem;
+    margin-top: 10px;
+    opacity: 0.8;
+}
+
+.orbit {
+    position: absolute;
+    border: 1px solid #555555;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+}
+.hour-orbit {
+    width: 500px;
+    height: 500px;
+}
+.minute-orbit {
+    width: 350px;
+    height: 350px;
+    border: 1px dashed #555555;
+}
+.second-orbit {
+    width: 200px;
+    height: 200px;
+}
+
+.planet {
+    position: absolute;
+    background: #555555;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.hour-planet {
+    width: 30px;
+    height: 30px;
+    top: -15px;
+}
+.minute-planet {
+    width: 20px;
+    height: 20px;
+    top: -10px;
+}
+.second-planet {
+    position: relative;
+    width: 15px;
+    height: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 55px;
+}
+
+.moon-orbit-line {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #555555;
+    border-radius: 50%;
+}
+.moon-rotator {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+}
+.moon {
+    width: 6px;
+    height: 6px;
+    background: #555555;
+    border-radius: 50%;
+    margin-top: -3px;
+}
